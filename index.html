@@ -427,11 +427,11 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-	  $("#gform").submit((e)=>{
+	  $("gform").submit((e)=>{
             e.preventDefault()
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbzDrkPIYJ4q9VYujFgtHovmsyXTZw-V89_ukKnpHjXmIlqJxYMZ01kZxiB9hrrmk0uT/exec",
-                data:$("#gform").serialize(),
+                data:$("gform").serialize(),
                 method:"post",
                 success:function (response){
                     alert("Form submitted successfully")
