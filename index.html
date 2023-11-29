@@ -319,7 +319,7 @@
 	  
 			  <div class="row no-gutters block-9">
 				<div class="col-md-6 order-md-last d-flex">
-				  <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbwov54QyoIeUxeiIkUuXvSXCtbMx1AFQaRrkcFR0kwLiRFeT5xLRtjrXq6sAgOoT5iW/exec" class="bg-light p-4 p-md-5 contact-form">
+				  <form id="gform"  action="" class="bg-light p-4 p-md-5 contact-form">
 					<div class="form-group">
 					  <input type="text" class="form-control" placeholder="Your Name">
 					</div>
@@ -427,11 +427,11 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-	  $("#submit-form").submit((e)=>{
+	  $("#gform").submit((e)=>{
             e.preventDefault()
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbzDrkPIYJ4q9VYujFgtHovmsyXTZw-V89_ukKnpHjXmIlqJxYMZ01kZxiB9hrrmk0uT/exec",
-                data:$("#submit-form").serialize(),
+                data:$("#gform").serialize(),
                 method:"post",
                 success:function (response){
                     alert("Form submitted successfully")
